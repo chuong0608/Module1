@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="nobita"
+     src="2.png"
+     style="position:absolute;left:0; top:0;" height="100" width="80"/>
+<script>
+    let anh=document.getElementById('nobita');
+    window.addEventListener('keydown', evt =>{
+        if(evt.keyCode == 37){
+            anh.style.left = parseInt(anh.style.left) -10 + "px";
+        }
+        if(evt.keyCode == 38){
+            anh.style.top = parseInt(anh.style.top) -10 + "px";
+        }
+        if(evt.keyCode == 39){
+            anh.style.left = parseInt(anh.style.left) +10 + "px";
+        }
+        if(evt.keyCode == 40){
+            anh.style.top = parseInt(anh.style.top) +10 + "px";
+        }
+
+        }
+    );
+</script>
+</body>
+</html>

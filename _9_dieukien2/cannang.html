@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="ipweight">
+<input type="text" id="ipheight">
+<button onclick="tile()">Kiểm tra</button>
+<h1 id="hienthi"></h1>
+<script>
+     function tile(){
+         let weight=document.getElementById('ipweight');
+         let height=document.getElementById('ipheight');
+         let ht=document.getElementById("hienthi");
+         let bmi = weight.value / ( height.value*height.value ) ;
+        if (bmi < 18.5)
+             ht.innerHTML="Underweight";
+         else if (bmi < 25.0)
+             ht.innerHTML="Normal";
+         else if (bmi < 30.0)
+             ht.innerHTML="Overweight";
+         else
+             ht.innerHTML="Obese";
+     }
+
+</script>
+</body>
+</html>

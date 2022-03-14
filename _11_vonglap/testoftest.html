@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="text" id="nhap">
+    <button onclick="thuchien()">Thực hiện</button>
+    <p id="rs"></p>
+<script>
+    let a=document.getElementById("nhap");
+    let rs=document.getElementById("rs");
+    function thuchien(){
+        let num = a.value;
+        let count= 1;
+        let text = "";
+        let n=2;
+        for(count=1;count<+num;){
+            if(n===2){
+                text= text +"" +n;
+                n++;
+            }
+            else {
+                let c=true
+                for (let i=2 ; i<n ; i++)
+                    if(n % i==0){
+                        c=false;
+                       n++;
+                       break;
+                    }
+                if(c==true){
+                    c=0;
+                    text= text + " " +n;
+                    n++;
+                    count++;
+                }
+            }
+        }
+        rs.innerHTML=text;
+    }
+
+</script>
+</body>
+</html>

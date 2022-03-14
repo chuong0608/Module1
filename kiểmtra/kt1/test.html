@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="sta">
+<input type="text" id="stb">
+<input type="text" id="stc">
+<button onclick="qqq()">Ấn3</button>
+<h1 id="kq"></h1>
+<script>
+    let a =document.getElementById('sta');
+    let b =document.getElementById("stb");
+    let c =document.getElementById("stc");
+    let kq=document.getElementById('kq');
+    function qqq(){
+        let ca = a.value;
+        let cb = b.value;
+        let cc = c.value;
+        let tg= "";
+        if (ca+cb >cc && cc+cb > ca & ca+cc > cb){
+            tg="tam giac";
+            if(ca==cb || cb==cc || cc==ca){
+                tg="tam giac can";
+            }
+            if(ca==cb & ca==cc){
+                tg = "tam giac deu";
+            }
+        }
+        kq.innerHTML=tg;
+    }
+</script>
+</body>
+</html>

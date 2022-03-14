@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bước 1: Làm giao diện theo yêu cầu đề bài-->
+<input type="text" id="s1">
+<input type="text" id="s2">
+<button onclick="Tinhtich()">Click</button>
+<h1 id="Tich"></h1>
+<script>
+    function Tinhtich() {
+        //Bước 2 : Lấy giá trị từ ô input
+        let c = document.getElementById('s1').value;
+        let d = document.getElementById('s2').value;
+        //Bước 3 : Chuyển giá trị lấy được sang dạng số để tính toán
+        let a = parseInt(c);
+        let b = parseInt(d);
+        //Bước 4: Tính
+        let T = a * b;
+        //Bước 5: Hiển thị ra thẻ h1
+        document.getElementById('Tich').innerHTML = "Tích 2 số là: " + T;
+    }
+</script>
+</body>
+</html>

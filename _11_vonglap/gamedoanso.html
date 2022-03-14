@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="Choi()">Chơi</button>
+<script>
+    function Choi() {
+        let s1=prompt("nhập số thứ nhất : ");
+        let s2=prompt("nhập số thứ hai :");
+        let a=s2-s1;
+        let rd=parseInt(Math.random()*a)+1;
+         for(;s1<s2;s1++){
+             let u=prompt("Mời bạn đoán số: ");
+             if(u==rd){
+                 alert("chúc mừng bạn:");
+                 break;
+             }else if(u<rd){
+                 alert("số lớn hơn: thua.lêu lêu!!!");
+             }else {
+                    alert("số nhỏ hơn cũng thua:Ngu!!") ;
+                 }
+             }
+
+        }
+</script>
+
+</body>
+</html>

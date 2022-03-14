@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            border: black;
+            border-collapse: collapse;
+        }
+        .th1{
+            background-color: orangered;
+            color: #eeeeee;
+        }
+        .xanh{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<form action="form2.html" method="get"></form>
+<table border="1">
+    <th class="th1" colspan="2">SỞ THÍCH CỦA BẠN</th>
+    <tr>
+        <td class="xanh">Họ và tên</td>
+        <td><input type="text" name="hoten"></td>
+    </tr>
+    <tr>
+        <td class="xanh">Email</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td class="xanh">Sở Thích</td>
+        <td style="color: orange">
+            <table>
+                <tr>
+                    <td><input type="checkbox">Thể thao</td>
+                    <td><input type="checkbox">Âm nhạc</td>
+                    <td><input type="checkbox">Đọc sách</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">Lưới web</td>
+                    <td><input type="checkbox">Chơi game</td>
+                    <td><input type="checkbox">Điện ảnh</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">Du lịch</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><button>Gửi thông tin</button><button>Nhập lại</button></td>
+    </tr>
+</table>
+
+</form>
+</body>
+
+<br>
+<br>
+<br>
+<body>
+<form action="form2.html" method="get">
+    <table style="background-color: yellow";>
+        <th>ĐĂNG KÍ HỌC VIÊN</th>
+        <tr>
+            <td>Họ và tên</td>
+            <td><input type="text" name="hoten"></td>
+        </tr>
+        <tr>
+            <td>Ngày sinh</td>
+            <td><input type="date" name="ngaysinh"></td>
+        </tr>
+        <tr>
+            <td>Giới tính</td>
+            <td><label><input type="radio" name="nam" checked>Nam</label>
+                <label><input type="radio" name="nam"> Nữ</label></td>
+        </tr>
+        <tr>
+            <td>Địa chỉ</td>
+            <td><textarea></textarea></td>
+        </tr>
+        <tr>
+            <td>Lớp</td>
+            <td>
+                <select >
+                    <option value=" " >-Chọn lớp-</option>
+                    <option>6A</option>
+                    <option>6b</option>
+                    <option>9ab</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="email"></td>
+        </tr>
+        <tr>
+            <td>Số điện thoại</td>
+            <td><input type="text" name="sdt"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button>Đăng kí</button> <button>Nhập lại</button></td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>

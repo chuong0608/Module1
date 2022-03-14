@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhapa" name="nhapa" style="width: 20px">
+<input type="text" id="nhapb" name="nhapb" style="width: 20px">
+<input id="ketqua" type="text">
+
+<button onclick="ketqua()">Hiển thị</button>
+
+<script>
+    function ketqua(){
+        let a = document.getElementById("nhapa");
+        let b = document.getElementById("nhapb");
+        if(a % b == 0){
+            document.getElementById("ketqua").value="a chia hết cho b";
+        }
+        /*else {
+            document.getElementById("ketqua").value="a không chia hết cho b"
+        }*/
+    }
+</script>
+</body>
+</html>

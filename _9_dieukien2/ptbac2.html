@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="sta" style="width: 30px">
+<input type="text" id="stb" style="width: 30px">
+<input type="text" id="stc" style="width: 30px"><br>
+<input type="text" id="kq" >
+<input type="text" id="kq2" ><br>
+<button onclick="cb2()">Tính</button>
+<script>
+    function cb2(){
+        let a=document.getElementById('sta');
+        let b=document.getElementById('stb');
+        let c=document.getElementById('stc');
+        let kq=document.getElementById('kq');
+        let kq2=document.getElementById('kq2');
+        let x=a.value;
+        let y=b.value;
+        let z=c.value;
+        let x1=0;
+        let x2=0;
+        let dt=(y*y)-(4*x*z);
+        if(x==0){
+            if(y==0){
+                kq.value="Phương trình vô nghiệm";
+            }else {
+                x1=-z/y;
+                kq.value="Phương tình có 1 nghiệm " + "x=" + x1;
+            }
+        }
+        else if(dt>0){
+            x1=(-y+(Math.sqrt(dt)))/2*x;
+            x2=(-y-(Math.sqrt(dt)))/2*x;
+            kq.value="x1=" + x1;
+            kq2.value="x2=" +x2;
+        }else if(dt==0){
+            x1=-y/(2*x);
+            kq.value="phương trình có 2 nghiệm x1=x2= " +x1;
+        }else {
+            kq.value="Phương trình vô nghiệm";
+        }
+    }
+</script>
+</body>
+</html>

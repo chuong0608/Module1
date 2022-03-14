@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="sta">
+<input type="text" id="stb">
+<button onclick="tinh()">Ấn</button>
+<h1 id="ht"></h1>
+<script>
+    let a=document.getElementById("sta");
+    let b=document.getElementById('stb');
+    let ht=document.getElementById('ht');
+    function tinh(){
+        if(a.value % b.value == 0 ){
+            ht.innerHTML="a chia hết cho b";
+        }else {
+            ht.innerHTML="a không chia hết cho b";
+        }
+    }
+</script>
+
+</body>
+</html>

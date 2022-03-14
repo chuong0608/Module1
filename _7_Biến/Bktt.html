@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Nhập điểm Vật lý</p>
+<input  type="text" id="vatly" >
+<p>Nhập điểm Hóa học</p>
+<input type="text" id="hoahoc">
+<p>Nhập điểm Sinh học</p>
+<input type="text" id="sinhhoc"><br>
+<button onclick="ketqua()">Ấn</button>
+<h1 id="kq"></h1>
+<h1 id="dbc"></h1>
+<script>
+        let vatLy=document.getElementById('vatly');
+        let hoaHoc=document.getElementById('hoahoc');
+        let sinhHoc=document.getElementById('sinhhoc');
+        let kq= document.getElementById('kq');
+        let tb= document.getElementById('dbc');
+        function ketqua(){
+            let tong= +vatLy.value+(+hoaHoc.value)+(+sinhHoc.value)
+            kq.innerHTML = +tong;
+            let tbc = tong/3;
+            tb.innerHTML= +tbc;
+    }
+</script>
+</body>
+<br>
+<br>
+<br>
+<hr>
+<body>
+<input type="text" id="doC">Độ C
+<button onclick="doi()">Đổi</button>
+<input type="text" id="doF">Độ F
+<script>
+    let c=document.getElementById('doC');
+    let dof=document.getElementById('doF');
+    function doi(){
+        let f=(9*c.value)/5+32;
+        dof.value=+f;
+
+    }
+
+</script>
+</body>
+<br><br><br><br>
+<hr>
+
+<body>
+<input type="text" id="bk">
+<button onclick="tinh()">tính</button>
+<script>
+    let width=document.getElementById('bk');
+    function tinh(){
+        document.write("diện tích hình tròn =");
+        document.write(+width.value*(+width.value)*3.14 );
+        document.write("<br>")
+        document.write("chu vi hình tròn = ");
+        document.write(+width.value * 2 *3.14)
+    }
+
+
+</script>
+
+</body>
+</html>

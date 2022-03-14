@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap">
+<button onclick="tinh()">an</button>
+<p id="ht"></p>
+<script>
+    function tinh(){
+        let a=document.getElementById("nhap");
+        let num =a.value;
+        let tong=0;
+        for(let i=1;i<=num;i++){
+            tong+=i;
+        }
+        document.getElementById("ht").innerHTML=tong;
+    }
+</script>
+</body>
+</html>
