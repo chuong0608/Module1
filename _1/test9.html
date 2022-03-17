@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        let a = +prompt("Nhập số")
+        arr.push(a);
+    }
+    let v = +prompt("Nhập số cần tìm")
+    indexOfX = -1;
+    for (let j = 0; j < arr.length; j++) {
+        if (v == arr[j]) {
+            indexOfX = j;
+
+        }
+    }
+    document.write(indexOfX);
+    arr.splice(indexOfX,1);
+    document.write(arr);
+</script>
+
+</body>
+</html>

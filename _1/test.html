@@ -5,21 +5,21 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="nhap">
-<button onclick="thuchien()">Thực hiện</button>
-<p id="rs"></p>
+<input type="text" id="nhapso">
+<button onclick="Thuchien()">Thực hiện</button>
+<p id="Hienthi"></p>
 <script>
-    let a = document.getElementById("nhap");
-    let rs = document.getElementById("rs");
+    let a = document.getElementById("nhapso");
+    let rs = document.getElementById("Hienthi");
 
-    function thuchien() {
+    function Thuchien() {
         let num = a.value;
-        let count = 1;
         let text = "";
+        let count = 1;
         let n = 2;
         for (count = 1; count < +num;) {
-            if (n === 2) {
-                text = text + "" + n;
+            if (n == 2) {
+                text = text + " " + n;
                 n++;
             } else {
                 let c = true;
@@ -35,12 +35,13 @@
                         n++;
                         count++;
                     }
+
                 }
             }
         }
         rs.innerHTML = text;
     }
-
 </script>
+
 </body>
 </html>

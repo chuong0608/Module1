@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = "";
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+            if (j <= i) {
+                a = a + "*";
+            } else {
+                a = a + "&ensp;";
+            }
+
+        }
+        a = a + "<br>";
+    }
+    document.write(a + "<br>");
+    let b = "";
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 5; j >= 1; j--) {
+            if (j >= i) {
+                b = b + "*";
+            } else {
+                b = b + "&ensp;";
+            }
+        }
+        b = b + "<br>";
+    }
+    document.write(b);
+</script>
+
+</body>
+</html>

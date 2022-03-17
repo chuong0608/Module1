@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="Play()">Chơi</button>
+<script>
+    function Play(){
+        let a=prompt("Nhập số thứ nhất : ");
+        let b=prompt("Nhập số thứ hai : ");
+        let r=b-a;
+        let rd= parseInt(Math.random()*a)+1;
+        let dem=1;
+        for (;a<b;a++){
+            let c=prompt("Mời bạn đoán số : ");
+            if(c==rd){
+                alert("Chúc mừng bạn!");
+                break;
+            }else {
+                if(c<rd){
+                    alert("số bé hơn");
+                }
+                if(c>rd){
+                    alert("số lớn hơn");
+                }
+            }
+        }
+
+    }
+</script>
+
+</body>
+</html>
